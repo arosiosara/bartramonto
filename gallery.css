@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Cormorant SC', serif;
+    background-color: #001f3f;
+    color: #333;
+}
+
+header {
+    background-color: #001f3f; /* blu */
+    padding: px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff9900;
+    font-family: 'Cormorant SC', serif;;
+    margin-top: 15px;
+  
+
+    
+}
+header nav {
+  display: flex;
+  gap: 20px; /* Distanza tra le voci del menu */
+  font-family: 'Cormorant SC', serif; /* Font morbido e spesso */
+  align-items: center; /* Centra le voci verticalmente */
+  margin-right: 90px; /* Aggiungi margine per aumentare la distanza del menu dal bordo */
+  margin-top: 15px;
+}
+    
+   
+    
+
+header nav a {
+  color: #ff9900; /* Colore del testo principale */
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  text-shadow: 0 0 2px #000a14, 0 0 4px #000a14; /* Contorno blu */
+}
+    
+    
+
+
+  
+  #parallax-container {
+    perspective: 1200px;
+    height: 100vh;
+    width: 100vw;
+  transform-style: preserve-3d;
+  }
+  
+  #parallax-container img {
+    transform-origin: center;
+    box-shadow: 0 0 12px 12px rgba(0, 0, 0, 0.4);
+    position: relative;
+  }
