@@ -12,7 +12,7 @@ body {
    margin: 0;
    padding: 0;
    height: 100vh;
-   background-image: url('PHOTO-2024-12-20-12-24-50_2.jpg');
+   background-image: url('gallery/PHOTO-2024-12-20-12-24-50_2.jpg');
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -20,6 +20,7 @@ body {
    font-family: 'Cormorant SC', serif;
    display: flex;
    flex-direction: column;
+   overflow-x: hidden;
 }
 
 /* Header */
@@ -78,7 +79,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
    header {
-       padding: 8px 10px;
+       padding: 8px 8px;
    }
 
    header .logo {
@@ -116,6 +117,7 @@ header nav a:hover {
    margin: 150px auto;
    border-radius: 7px;
    position: relative;
+   text-align: center; /* Allinea orizzontalmente */
 }
 
 #contact-form input,
@@ -162,12 +164,30 @@ header nav a:hover {
    color: #001f3f;
 }
 
-/* Responsive adjustments */
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 480px) {
    #contact-form {
-       padding: 15px;
+       max-width: 100%; /* Occupa l'intera larghezza disponibile */
+       margin: 20px auto; /* Riduci il margine superiore */
+       padding: 10px 15px; /* Riduci il padding interno */
+   }
+
+   #contact-form label {
+       font-size: 14px; /* Riduci leggermente il font */
+   }
+
+   #contact-form input,
+   #contact-form select,
+   #contact-form textarea {
+       font-size: 14px; /* Dimensione font adattata */
+       padding: 8px; /* Riduci il padding degli input */
+   }
+
+   #contact-form button[type="submit"] {
+       padding: 8px; /* Riduci il padding del pulsante */
+       font-size: 14px; /* Dimensione font adattata */
    }
 }
+
 
 /* Image and video scaling */
 img,
@@ -176,7 +196,3 @@ video {
    height: auto;
 }
 
- 
-   height: auto;
- 
- }
