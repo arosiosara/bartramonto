@@ -79,7 +79,7 @@ header {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url('gallery/PHOTO-2024-12-20-12-24-50_2.jpg');  /* Percorso relativo alla tua immagine */
+    background-image: url('PHOTO-2024-12-20-12-24-50_2.jpg');  /* Percorso relativo alla tua immagine */
     background-size: cover; /* Assicura che l'immagine copra tutto lo sfondo */
     background-position: center center; /* Centra l'immagine nello schermo */
     background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
