@@ -194,16 +194,8 @@ a:hover {
 a:active {
     color: #001f3f;
 }
-body, html {
-    margin: 0;
-    padding: 0;
-    background-color: #001f3f;
-}
 
-.content {
-    width: 100vw;
-    font-family: 'Cormorant SC', serif;
-}
+
 
 .section {
     width: 100%;
@@ -215,52 +207,30 @@ body, html {
     text-align: center;
 }
 
-.section > div {
-    width: 90%;
+
+
+
+/* Per schermi medi (tablet) */
+@media (max-width: 1024px) {
+    .section:nth-child(1) {
+        font-size: 30vh; /* Riduci la dimensione */
+    }
 }
 
-
-
+/* Per schermi piccoli (smartphone) */
 @media (max-width: 768px) {
     .section:nth-child(1) {
-        font-size: 10vw; /* Riduci la dimensione per schermi più piccoli */
+        font-size: 20vh; /* Dimensione minore per smartphone */
     }
 }
-  
-  
-  
+
+/* Per schermi molto piccoli (es. 5 pollici) */
 @media (max-width: 480px) {
     .section:nth-child(1) {
-        font-size: 12vw; /* Ancora più piccolo per dispositivi molto piccoli */
+        font-size: 10vh; /* Adatta ulteriormente per schermi ridotti */
     }
 }
-  img, video {
-
-    max-width: 100%;
-  
-    height: auto;
-  
-  }
-
-.section:nth-child(2) {  
-    font-size: 8vh;
-}
-
-.section:nth-child(3) {
-    font-size: 8vh;
-}
-
-.section:nth-child(2) > div {
-    max-width: 800px
-}
-
-.section:nth-child(3) > div {
-    max-width: 900px
-}
-
-.section:nth-child(3) a {
-    padding: 0 .3em;
-}
+Cosa fa q
 
 canvas#neuro {
     position: fixed;
