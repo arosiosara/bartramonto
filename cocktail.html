@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail</title>
+    <link rel="stylesheet" href="cocktail.css">
+</head>
+<body>
+    <!-- Menu di navigazione -->
+    <header>
+        <nav>
+            <a href='gallery.html'>GALLERY</a>
+            <a href='eventi.html'>EVENTI</a>
+            <a href='contatti.html'>CONTATTI</a>
+        </nav>
+    </header>
+
+    
+
+    <!-- Galleria di immagini -->
+    <div class="posters">
+        <!-- Poster 1 -->
+        <div class="poster"data-image="gallery/ARANCIONE.jpg" data-description="Questa è la descrizione della prima immagine.">
+            <img class="source" src="gallery/2.jpg" alt="Poster 1">
+            <img class="reflection" src="gallery/2.jpg" alt="Reflection 1">
+        </div>
+        <!-- Poster 2 -->
+        <div class="poster"data-image="gallery/GIALLO.jpg" data-description="Questa è la descrizione della prima immagine.">
+            <img class="source" src="gallery/3.jpg" alt="Poster 2">
+            <img class="reflection" src="gallery/3.jpg" alt="Reflection 2">
+        </div>
+        <!-- Poster 3 -->
+        <div class="poster"data-image="gallery/ROSSO.jpg" data-description="Questa è la descrizione della prima immagine.">
+            <img class="source" src="gallery/4.jpg" alt="Poster 3">
+            <img class="reflection" src="gallery/4.jpg" alt="Reflection 3">
+        </div>
+        <!-- Poster 4 -->
+        <div class="poster"data-image="gallery/VERDE.jpg" data-description="Questa è la descrizione della prima immagine.">
+            <img class="source" src="gallery/5.jpg" alt="Poster 4">
+            <img class="reflection" src="gallery/5.jpg" alt="Reflection 4">
+        </div>
+
+        <div class="poster"data-image="gallery/BIANCO.jpg" data-description="Questa è la descrizione della prima immagine.">
+            <img class="source" src="gallery/6.jpg" alt="Poster 4">
+            <img class="reflection" src="gallery/6.jpg" alt="Reflection 4">
+        </div>
+        <div class="poster" data-image="gallery/BIANCO.jpg" data-description="Questa è la descrizione della prima immagine.">
+            <img class="source" src="gallery/7.jpg" alt="Poster 1">
+            <img class="reflection" src="gallery/7.jpg" alt="Reflection 1">
+        </div>
+        <div class="poster"data-image="gallery/AZZURRO.jpg" data-description="Questa è la descrizione della prima immagine.">
+            <img class="source" src="gallery/8.jpg" alt="Poster 1">
+            <img class="reflection" src="gallery/8.jpg" alt="Reflection 1">
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <img id="modal-image" src="" alt="Poster grande">
+                <p id="modal-description"></p>
+            </div>
+    </div>
+    <script src="cocktail.js"></script>
+</body>
+</html>

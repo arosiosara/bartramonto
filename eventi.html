@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAR TRAMONTO</title>
+    <!-- Collegamento al file CSS -->
+    <link rel="stylesheet" href="eventi.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <a href='cocktail.html'>COCKTAIL</a>
+            <a href='gallery.html'>GALLERY</a>
+            <a href='contatti.html'>CONTATTI</a>
+        </nav>
+    </header>
+    
+    <div class="main-content">
+    <!-- Titolo della pagina -->
+    <h1 class="titolo">EVENTI AL TRAMONTO... E NON SOLO</h1>
+
+    <!-- Container Vue.js -->
+    <div id="app" class="container">
+        <!-- Card 1 -->
+        <card data-image="gallery/karaoke.jpg">
+            <h1 slot="header">Karaoke</h1>
+            <p slot="content">Due sabati al mese, canta con noi!</p>
+        </card>
+        <!-- Card 2 -->
+        <card data-image="gallery/taroccati.jpg">
+            <h1 slot="header">I Taroccati</h1>
+            <p slot="content">La lettura delle carte 1 Venerdi al mese</p>
+        </card>
+        <!-- Card 3 -->
+        <card data-image="gallery/djset.jpg">
+            <h1 slot="header">DJ Set</h1>
+            <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </card>
+        <!-- Card 4 -->
+        <card data-image="gallery/banana.jpg">
+            <h1 slot="header">Feste Private</h1>
+            <p slot="content">Prenota per il tuo evento</p>
+        </card>
+    </div>
+
+    <!-- Collegamento al file JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="eventi.js"></script>
+</body>
+</html>

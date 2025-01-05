@@ -1,0 +1,235 @@
+header {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding: 15px 20px;
+   background-color: #001f3f; /* Sfondo per visibilità */
+ }
+
+ header .logo {
+   margin-right: auto;
+   font-size: 1.5rem; /* Usa unità relative */
+   font-weight: bold;
+   color: #ff9900;
+ }
+
+ header nav {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+ }
+
+ header nav a {
+   color: #ff9900;
+   text-decoration: none;
+   font-size: 1rem; /* Usa unità relative */
+   font-weight: bold;
+   transition: color 0.3s ease;
+   text-shadow: 0 0 2px #001f3f, 0 0 4px #001f3f;
+ }
+
+ header nav a:hover {
+   color: #ffffff; /* Cambia colore al passaggio del mouse */
+ }
+
+ @media (max-width: 768px) {
+   header {
+     flex-wrap: wrap;
+     padding: 10px 15px;
+   }
+
+   header .logo {
+     font-size: 1.2rem;
+     margin-bottom: 10px;
+   }
+
+   header nav {
+     gap: 10px;
+   }
+
+   header nav a {
+     font-size: 0.9rem;
+   }
+ }
+
+ @media (max-width: 480px) {
+   header {
+     padding: 8px 10px;
+   }
+
+   header .logo {
+     font-size: 1rem;
+   }
+
+   header nav a {
+     font-size: 0.8rem;
+   }
+ }
+
+ * {
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    -o-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+ }
+ body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('gallery/PHOTO-2024-12-20-12-24-50_2.jpg');  /* Percorso relativo alla tua immagine */
+    background-size: cover; /* Assicura che l'immagine copra tutto lo sfondo */
+    background-position: center center; /* Centra l'immagine nello schermo */
+    background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+    color: white; /* Colore del testo, per farlo risaltare sull'immagine */
+    font-family: 'Cormorant SC', serif;
+    display: flex;
+    flex-direction: column;
+   }
+ 
+   .footer {
+      background-color: #001f3f; /* Blu */
+      color: #ff9900; /* Arancione */
+      font-family: 'Cormorant SC', serif; /* Font elegante */
+      text-align: center;
+      padding: 20px 0;
+      position: fixed; /* Fisso in basso */
+      bottom: 0; /* Posiziona il footer in basso */
+      width: 100%; /* Occupare tutta la larghezza */
+      z-index: 10; /* Assicurati che il footer stia sopra gli altri contenuti */
+   }
+   
+
+.footer-content p {
+   margin: 5px 0; /* Spaziatura tra le righe */
+   font-size: 16px; /* Dimensione del testo */
+}
+#contact-form {
+   flex: 1; /* Consente al form di occupare lo spazio rimanente */
+}
+
+ 
+ /* Contact Form Styles */
+ h1 {
+    margin: 10px 0 0 0;
+ }
+ h4{
+    margin: 0 0 20px 0;
+ }
+ #contact-form {
+    background-color:#ff9900;
+    padding: 10px 20px 30px 20px;
+    max-width:100%;
+    float: left;
+    left: 50%;
+    position: absolute;
+    margin-top:150px;
+    margin-left: -360px;
+    border-radius:7px;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+ }
+ #contact-form input,   
+ #contact-form select,   
+ #contact-form textarea { 
+    color: #ff9900; /* Colore del testo inserito dall'utente */
+    background: #fff; /* Sfondo del campo */
+    border: 0; 
+    -moz-border-radius: 4px;  
+    -webkit-border-radius: 4px;  
+    border-radius: 4px;
+    margin-bottom: 25px;  
+    padding: 5px;  
+}    
+#contact-form label { 
+   font-size: 15px;  
+   margin-bottom: 2px;
+   font-family: 'Cormorant SC', serifd;
+   font-weight: bold;
+   
+}
+#contact-form label span {
+   color: #001f3f; /* Colore blu per tutte le etichette */
+}
+ 
+ #contact-form input,   
+ #contact-form select,   
+ #contact-form textarea { 
+    width:100%;
+    background: #fff;
+    border: 0; 
+    -moz-border-radius: 4px;  
+    -webkit-border-radius: 4px;  
+    border-radius: 4px;
+    margin-bottom: 25px;  
+    padding: 5px;  
+ }  
+ #contact-form input:focus,   
+ #contact-form select:focus,   
+ #contact-form textarea:focus {  
+    background-color: #001f3f; 
+ }  
+ #contact-form textarea {
+    width:100%;
+    height: 150px;
+ }
+ #contact-form button[type="submit"] {
+    cursor:pointer;
+    width:100%;
+    border:none;
+    background:#001f3f;
+    background-image:linear-gradient(bottom, #001f3f 0%, #001f3f 52%);
+    background-image:-moz-linear-gradient(bottom, #001f3f 0%, #001f3f 52%);
+    background-image:-webkit-linear-gradient(bottom, #001f3f 0%, #001f3f 52%);
+    color:#001f3f;
+    margin:0 0 5px;
+    padding:10px;
+    border-radius:5px;
+ }
+ #contact-form button[type="submit"]:hover {
+   background: linear-gradient(to top, #001f3f 0%, #001f3f 52%); /* Direzione migliorata */
+   transition: background 0.3s ease-in-out; /* Coerente con la proprietà animata */
+}
+
+ #contact-form button[type="submit"]:active {
+    box-shadow:inset 0 1px 3px #ff9900;
+ }
+ input:required, textarea:required {  
+    box-shadow: none;
+    -moz-box-shadow: none;  
+    -webkit-box-shadow: none;  
+    -o-box-shadow: none;  
+ } 
+ #contact-form .required {  
+    font-weight:bold;  
+    color: #001f3f;      
+ }
+ 
+ /* Hide success/failure message
+    (especially since the php is missing) */
+ #failure, #success {
+    color: #ff9900; 
+    display:none;  
+ }
+ 
+ /* Make form look nice on smaller screens */
+ @media only screen and (max-width: 580px) {
+    #contact-form{
+       left: 3%;
+       margin-right: 3%;
+       width: 88%;
+       margin-left: 0;
+       padding-left: 3%;
+       padding-right: 3%;
+    }
+ }
+ 
+ img, video {
+
+   max-width: 100%;
+ 
+   height: auto;
+ 
+ }
