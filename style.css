@@ -227,7 +227,7 @@ a:active {
 /* Per schermi molto piccoli (es. 5-6 pollici) */
 @media (max-width: 480px) {
     .titolo-3d {
-        font-size: 20px; /* Adatta la dimensione del font */
+        font-size: 18px; /* Adatta la dimensione del font */
     }
 }
 
