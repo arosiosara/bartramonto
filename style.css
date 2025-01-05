@@ -126,7 +126,7 @@ body, html {
 }
 
 .section:nth-child(1) {
-    font-size: 15vh; /* Dimensione del font */
+    font-size: calc(8vw + 2vh); /* Dimensione del font */
     font-family: 'Cormorant SC', serif; /* Font 3D da Google Fonts */
     font-weight: bold;
     color: #ff9900; /* Colore principale del testo */
@@ -219,42 +219,21 @@ body, html {
     width: 90%;
 }
 
-.section:nth-child(1) {
-    font-size: 50vh; /* Modifica la dimensione del font DELLA SCRITTA BAR TRAMONTO */
-    font-family: 'Cormorant SC', serif; /* Imposta il font Arial */
-    font-weight: bold; /* Rende il testo in grassetto */
-    color: #ff9900; /* Colore ORO */
-}
-
 
 
 @media (max-width: 768px) {
-
-    body {
-  
-      font-size: 14px;
-  
-      padding: 10px;
-  
+    .section:nth-child(1) {
+        font-size: 10vw; /* Riduci la dimensione per schermi più piccoli */
     }
-  
-  }
-  
+}
   
   
-  /* Stili specifici per dispositivi piccoli (max-width: 480px) */
   
-  @media (max-width: 480px) {
-  
-    body {
-  
-      font-size: 12px;
-  
-      padding: 5px;
-  
+@media (max-width: 480px) {
+    .section:nth-child(1) {
+        font-size: 12vw; /* Ancora più piccolo per dispositivi molto piccoli */
     }
-  
-  }
+}
   img, video {
 
     max-width: 100%;
