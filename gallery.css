@@ -103,22 +103,61 @@ img, video {
   body {
 
     font-size: 14px;
-
     padding: 10px;
 
   }
+  #parallax-container {
+    height: auto; /* Adatta l'altezza del contenitore */
+    flex-wrap: wrap; /* Permetti il wrapping per adattarsi meglio */
+    overflow-x: auto; /* Mantieni lo scorrimento orizzontale */
+    padding: 10px; /* Margine interno per evitare che le immagini siano troppo vicine ai bordi */
+  }
+
 
 }
 
 /* Stili specifici per dispositivi piccoli (max-width: 480px) */
 
 @media (max-width: 480px) {
-
   body {
-
     font-size: 12px;
-
     padding: 5px;
+  }
 
+  #parallax-container {
+    display: flex; /* Disposizione flessibile per il contenitore */
+    flex-direction: column; /* Colonna per scorrimento verticale */
+    flex-wrap: nowrap; /* Nessun wrapping per immagini */
+    padding: 15px;
+    perspective: 1200px;
+    height: 100vh;
+    width: 100vw;
+    transform-style: preserve-3d;
+    align-items: center; /* Allinea verticalmente al centro */
+    justify-content: center; /* Centra le immagini nello spazio disponibile */
+    scroll-snap-type: y mandatory; /* Abilita lo snap delle immagini verticalmente */
+    overflow-y: auto; /* Abilita lo scorrimento verticale */
+   
+  }
+
+  #parallax-container img {
+    max-width: 100%; /* Riduci ulteriormente le dimensioni delle immagini */
+    width: 100%;
+    transform-origin: center;
+    box-shadow: 0 0 12px 12px rgba(0, 0, 0, 0.4);
+    position: relative;
+    scroll-snap-align: center; /* Allinea al centro durante lo scorrimento */
+    margin:10px  auto; /* Centra le immagini */
+   align-self: center;
+   display: block;
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  * {
+    box-sizing: border-box;
   }
 }
