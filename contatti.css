@@ -91,23 +91,47 @@ header nav a:hover {
    }
 }
 
-/* Footer */
+* Footer */
 .footer {
    background-color: #001f3f;
    color: #ff9900;
    font-family: 'Cormorant SC', serif;
    text-align: center;
-   padding: 20px 0;
+   padding: 10px 0px;
    position: fixed;
    bottom: 0;
    width: 100%;
    z-index: 10;
+   display: flex;
+   justify-content: center; /* Centra il contenuto orizzontalmente */
+   align-items: center; /* Allinea verticalmente al centro */
 }
 
-.footer-content p {
-   margin: 5px 0;
-   font-size: 16px;
+/* Wrapper per il testo e il pulsante */
+.footer-content {
+   display: flex; /* Usa flexbox per allineare il testo e il pulsante */
+   align-items: center; /* Allinea verticalmente al centro */
 }
+
+/* Testo all'interno del footer */
+.footer-content p {
+   margin: 0 10px 0 0; /* Aggiungi margine solo a destra del testo */
+   font-size: 16px;
+   text-align: left; /* Allinea il testo a sinistra */
+}
+
+/* Pulsante WhatsApp */
+.whatsapp-button {
+   margin-left: 10px; /* Distanza tra il testo e il pulsante */
+}
+
+/* Se vuoi regolare l'icona WhatsApp */
+.whatsapp-button img {
+   width: 50px;  /* Dimensione dell'icona */
+   height: 50px;
+   cursor: pointer;
+}
+
 
 /* Contact Form */
 #contact-form {
