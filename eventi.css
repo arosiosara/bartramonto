@@ -88,10 +88,15 @@ header nav a {
   header nav a {
       font-size: 0.8rem;
   }
-}
+
+  
+
+  }
+
 
 
 .titolo {
+  font-size: clamp(24px, 6vw, 48px); /* Minimo 24px, massimo 48px, scalabile con la larghezza dello schermo */
   font-size: 3vh;
   font-family: 'Cormorant SC', serif;
   font-weight: bold;
@@ -257,10 +262,14 @@ p + p {
     padding:0;
     margin:0;
   }
+
+  .titolo {
+    font-size: clamp(16px, 4.5vw, 28px); /* Ancora più piccolo per telefoni */
+    text-shadow: 1px 1px 0 #ff9900; /* Riduce l'effetto ombra */
+  }
 }
 
 img, video {
   max-width: 100%;
   height: auto;
 }
-
