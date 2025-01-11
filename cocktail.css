@@ -102,11 +102,15 @@ header nav a:hover {
 
 @media (max-width: 480px) {
     header {
-        padding: 5px 10px;
+        padding: 8px 8px;
     }
-
+ 
+    header .logo {
+        font-size: 1rem;
+    }
+ 
     header nav a {
-        font-size: 14px;
+        font-size: 0.8rem;
     }
 
     .poster {
