@@ -12,7 +12,7 @@ body {
    margin: 0;
    padding: 0;
    height: 100vh;
-   background-image: url('gallery/PHOTO-2024-12-20-12-24-50_2.jpg');
+   background-image: url('PHOTO-2024-12-20-12-24-50_2.jpg');
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -166,7 +166,7 @@ header nav a:hover {
 
 @media only screen and (max-width: 480px) {
    #contact-form {
-       max-width: 100%; /* Occupa l'intera larghezza disponibile */
+       max-width: 60%; /* Occupa l'intera larghezza disponibile */
        margin: 20px auto; /* Riduci il margine superiore */
        padding: 10px 15px; /* Riduci il padding interno */
    }
@@ -178,16 +178,44 @@ header nav a:hover {
    #contact-form input,
    #contact-form select,
    #contact-form textarea {
-       font-size: 14px; /* Dimensione font adattata */
+       font-size: 10px; /* Dimensione font adattata */
        padding: 8px; /* Riduci il padding degli input */
    }
+   #contact-form h1 {
+      font-size: 15px; /* Dimensione font adattata */
+      padding: 8px; /* Riduci il padding degli input */
+  }
+  #contact-form h4 {
+   font-size: 10px; /* Dimensione font adattata */
+   padding: 8px; /* Riduci il padding degli input */
+}
 
    #contact-form button[type="submit"] {
        padding: 8px; /* Riduci il padding del pulsante */
        font-size: 14px; /* Dimensione font adattata */
    }
-}
 
+   .footer {
+      background-color: #001f3f;
+      color: #ff9900;
+      font-family: 'Cormorant SC', serif;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 10;
+   }
+   
+   .footer-content p {
+      margin: 2px 0;
+      font-size: 10px;
+   }
+    .body{
+      background-position: absolute;
+      background-image: absolute;
+    }
+}
 
 /* Image and video scaling */
 img,
