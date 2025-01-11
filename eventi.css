@@ -195,16 +195,25 @@ p + p {
   }
 
   .card {
+    position: relative;
     width: 200px;
     height: 300px;
     margin-bottom: 20px;
   }
 
   .card-info h1 {
+    position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 24px;
   }
 
   .card-info p {
+    position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 14px;
   }
 }
@@ -218,8 +227,8 @@ p + p {
   }
 
   .card {
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 200px;
     padding:2;
     margin: 5px;;
   }
@@ -229,10 +238,18 @@ p + p {
   }
 
   .card-info h1 {
+    position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 18px;
   }
 
   .card-info p {
+    position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 12px;
   }
 
@@ -246,3 +263,4 @@ img, video {
   max-width: 100%;
   height: auto;
 }
+
