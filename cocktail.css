@@ -81,6 +81,8 @@ header nav a:hover {
     filter: blur(3px);
 }
 
+
+
 /* Stile responsivo */
 @media (max-width: 768px) {
     header nav a {
@@ -91,7 +93,12 @@ header nav a:hover {
         width: 120px;
         height: 200px;
     }
+    .poster .reflection {
+        height: 80%; /* Riduce l'altezza del riflesso */
+        opacity: 0.4; /* Riduce la visibilità del riflesso */
+    }
 }
+
 
 @media (max-width: 480px) {
     header {
@@ -105,6 +112,10 @@ header nav a:hover {
     .poster {
         width: 100px;
         height: 160px;
+    }
+    .poster .reflection {
+        height: 60%; /* Ancora più ridotto */
+        opacity: 0.3; /* Riflesso meno evidente */
     }
 }
 /* Resetta margini e padding */
