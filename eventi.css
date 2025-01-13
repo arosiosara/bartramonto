@@ -227,15 +227,21 @@ p + p {
   .container {
     flex-direction: column;
     align-items: center;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
   }
 
   .card {
     width: 150px;
     height: 200px;
-    padding:2;
-    margin: 5px;;
+    padding: 8px; /* Aggiungi un po' di padding per un miglior margine */
+    margin: 5px;
+    overflow: hidden; /* Impedisce che il contenuto esca dalla card */
+    box-sizing: border-box; /* Garantisce che padding e border siano inclusi nelle dimensioni */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Allinea verticalmente il contenuto */
+    align-items: center; /* Allinea orizzontalmente il contenuto */
   }
 
   .card-bg {
@@ -243,31 +249,30 @@ p + p {
   }
 
   .card-info h1 {
-    position: center;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px; /* Font size più piccolo */
+    margin: 0; /* Rimuove margini extra */
+    padding: 0; /* Rimuove padding */
   }
 
   .card-info p {
-    position: center;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    font-size: 12px;
+    font-size: 12px; /* Font size più piccolo */
+    margin: 0; /* Rimuove margini extra */
+    padding: 0; /* Rimuove padding */
   }
 
   .card-wrap {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
   }
 
   .titolo {
-    font-size: clamp(16px, 4.5vw, 28px); /* Ancora più piccolo per telefoni */
-    text-shadow: 1px 1px 0 #ff9900; /* Riduce l'effetto ombra */
+    font-size: clamp(16px, 4.5vw, 28px);
+    text-shadow: 1px 1px 0 #ff9900;
   }
 }
+
 
 img, video {
   max-width: 100%;
