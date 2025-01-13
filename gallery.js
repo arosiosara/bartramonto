@@ -92,6 +92,13 @@ function getRandomInRange(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+
+
+// Funzione per ottenere un numero casuale nell'intervallo specificato
+function getRandomInRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 // Funzione per caricare le immagini
 function preloadImage(filename) {
     var img = new Image();
