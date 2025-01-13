@@ -251,16 +251,24 @@ p + p {
   .card-info h1 {
     text-align: center;
     font-size: 16px; /* Font size più piccolo */
-    margin: 0; /* Rimuove margini extra */
+    margin: 0 0 5px 0; /* Aggiungi margine inferiore per separare gli elementi */
     padding: 0; /* Rimuove padding */
+    margin-top: -80px;
   }
 
-  .card-info p {
-    text-align: center;
-    font-size: 12px; /* Font size più piccolo */
-    margin: 0; /* Rimuove margini extra */
-    padding: 0; /* Rimuove padding */
-  }
+  .card-info p { 
+  
+    text-align: left; /* Distribuisce uniformemente le parole */
+    font-size: 11px; /* Dimensione del testo */
+    padding: 0; /* Rimuove padding extra */
+    width: auto; /* Larghezza flessibile */
+    box-sizing: border-box; /* Assicura che padding e margine siano inclusi nella larghezza */
+    white-space: wrap; /* Impedisce l'andare a capo */
+    margin-right: 2px;
+    margin-left: 2px;
+    
+    
+}
 
   .card-wrap {
     padding: 0;
@@ -270,6 +278,8 @@ p + p {
   .titolo {
     font-size: clamp(16px, 4.5vw, 28px);
     text-shadow: 1px 1px 0 #ff9900;
+    margin-bottom: 5px; /* Spazio aggiuntivo sotto il titolo */
+    margin-top: -50px;
   }
 }
 
